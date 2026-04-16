@@ -13,15 +13,19 @@
 
 <body>
 
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="fondo.mp4" type="video/mp4">
+  </video>
+
   <div id="cursor"></div>
   <div id="cursor-ring"></div>
 
-  <!-- NAV -->
   <nav>
-    <a href="#" class="nav-logo">Rocio Torrano</a>
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="Rocio Torrano" style="height: 60px; width: auto; display: block;">
+    </a>
     <ul class="nav-links">
       <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#proceso">Proceso</a></li>
       <li><a href="#contacto">Contacto</a></li>
       <li><a href="https://github.com/Rociotorrano" target="_blank">GitHub ↗</a></li>
@@ -30,6 +34,14 @@
 
   <!-- HERO -->
   <section class="hero">
+    <div class="hero-bg-anim">
+      <!-- Destellos inspirados en la imagen -->
+      <div class="sparkle" style="top: 15%; left: 10%; animation-delay: 0s;"></div>
+      <div class="sparkle" style="top: 40%; right: 15%; animation-delay: 1.5s; width: 25px; height: 25px;"></div>
+      <div class="sparkle" style="bottom: 20%; left: 25%; animation-delay: 0.8s; width: 18px; height: 18px;"></div>
+      <div class="sparkle" style="top: 60%; left: 60%; animation-delay: 2s; width: 12px; height: 12px;"></div>
+      <div class="sparkle" style="top: 10%; right: 30%; animation-delay: 0.5s; width: 20px; height: 20px;"></div>
+    </div>
     <div class="hero-left">
       <div class="hero-tag">Diseño Digital · Invitaciones · Portfolios</div>
       <h1 class="hero-title">
@@ -44,13 +56,9 @@
       </div>
     </div>
     <div class="hero-right">
-      <div class="hero-decoration">
-        <div class="deco-frame"></div>
-      </div>
     </div>
     <div class="hero-scroll">
       <span>Scroll</span>
-      <div class="line"></div>
     </div>
   </section>
 
@@ -77,7 +85,11 @@
       <h2 class="section-title">Lo que <em>creo</em></h2>
       <div class="section-line"></div>
     </div>
-    <div class="services-grid">
+    <div class="services-grid" style="position: relative;">
+      <!-- Brillos en servicios -->
+      <div class="sparkle" style="top: -10%; right: 10%; animation-delay: 2s; width: 12px; height: 12px;"></div>
+      <div class="sparkle" style="bottom: 5%; left: -5%; animation-delay: 1s; width: 15px; height: 15px;"></div>
+
       <div class="service-card">
         <div class="service-icon">♡</div>
         <h3 class="service-name">Invitaciones de Boda</h3>
@@ -93,7 +105,7 @@
       <div class="service-card">
         <div class="service-icon">◈</div>
         <h3 class="service-name">Portfolios</h3>
-        <p class="service-desc">Sitios web elegantes que muestran el trabajo fotográfico con galerías optimizadas,
+        <p class="service-desc">Sitios web que muestran tu trabajo, 100% personalizados,
           diseño editorial y experiencia de usuario premium.</p>
       </div>
     </div>
@@ -108,7 +120,10 @@
       <h2 class="section-title">El <em>proceso</em></h2>
       <div class="section-line"></div>
     </div>
-    <div class="process-steps">
+    <div class="process-steps" style="position: relative;">
+      <!-- Brillos en proceso -->
+      <div class="sparkle" style="top: 20%; left: 45%; animation-delay: 3s; filter: brightness(2);"></div>
+
       <div class="step">
         <div class="step-num">01</div>
         <h3 class="step-title">Escucho tu idea</h3>
@@ -141,7 +156,11 @@
       <h2 class="section-title">Hablemos de tu <em>proyecto</em></h2>
       <div class="section-line"></div>
     </div>
-    <div class="contact-inner">
+    <div class="contact-inner" style="position: relative;">
+      <!-- Brillos en contacto -->
+      <div class="sparkle" style="bottom: 10%; right: 5%; animation-delay: 0.5s;"></div>
+      <div class="sparkle" style="top: 5%; left: 40%; animation-delay: 2.5s; width: 10px; height: 10px;"></div>
+
       <div class="contact-left">
         <div class="big-text">
           Cada proyecto<br>merece ser<br><em>extraordinario</em>

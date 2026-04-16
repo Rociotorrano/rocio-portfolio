@@ -20,15 +20,15 @@ const cursor = document.getElementById('cursor');
     document.querySelectorAll('a, button, .project-card').forEach(el => {
       el.addEventListener('mouseenter', () => {
         cursor.style.transform = 'translate(-50%, -50%) scale(2)';
-        cursor.style.background = 'var(--gold)';
+        cursor.style.background = 'white';
         ring.style.transform = 'translate(-50%, -50%) scale(1.5)';
         ring.style.opacity = '0.3';
       });
       el.addEventListener('mouseleave', () => {
         cursor.style.transform = 'translate(-50%, -50%) scale(1)';
-        cursor.style.background = 'var(--dusty-rose)';
+        cursor.style.background = 'white';
         ring.style.transform = 'translate(-50%, -50%) scale(1)';
-        ring.style.opacity = '0.6';
+        ring.style.opacity = '1';
       });
     });
 
