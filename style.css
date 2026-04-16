@@ -1,16 +1,14 @@
 :root {
   --cream: #d89fb0;
-  /* EL ROSADO QUE TE GUSTA */
   --warm-white: #FFFFFF;
   --blush: #FDE2E4;
   --dusty-rose: #F28C95;
   --terra: #FFB382;
-  --deep: #5D4D42;
-  /* Un café más suave y elegante, no tan oscuro */
-  --sage: #8B735B;
-  --gold: #FFD97D;
-  --gold-light: rgba(255, 255, 255, 0.2);
-  --charcoal: #5D4D42;
+  --deep: #3A506B; /* Azul profundo para legibilidad en lugar de marrón */
+  --sage: #5BC0BE; /* Celeste acento */
+  --gold: rgba(255, 255, 255, 0.85); /* Blanco opaco para etiquetas */
+  --gold-light: rgba(186, 225, 255, 0.3); /* Bordes celestes suaves */
+  --charcoal: #5BC0BE;
   --mesh-1: #FFB382;
   --mesh-2: #F28C95;
   --mesh-3: #FFD97D;
@@ -113,7 +111,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 1.5rem 4rem;
+  padding: 1rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -651,11 +649,11 @@ section {
 }
 
 .process .section-title em {
-  color: var(--blush);
+  color: var(--dusty-rose); /* Coral más visible */
 }
 
 .process .section-num {
-  color: var(--gold);
+  color: var(--deep); /* Azul profundo para que se note */
 }
 
 .process .section-line {
@@ -682,7 +680,8 @@ section {
   font-size: 4rem;
   font-weight: 300;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--deep); /* Cambiado a deep con opacidad para que se vea */
+  opacity: 0.15;
   line-height: 1;
   margin-bottom: 1rem;
 }
@@ -804,8 +803,8 @@ section {
 
 .form-submit {
   padding: 1rem 2.5rem;
-  background: var(--deep);
-  color: var(--cream);
+  background: rgba(186, 225, 255, 0.9); /* Celeste soñado en el botón */
+  color: var(--deep);
   border: none;
   cursor: none;
   font-family: 'DM Sans', sans-serif;
@@ -814,23 +813,25 @@ section {
   text-transform: uppercase;
   align-self: flex-start;
   margin-top: 0.5rem;
-  transition: background 0.2s, transform 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(186, 225, 255, 0.3);
 }
 
 .form-submit:hover {
-  background: var(--terra);
+  background: white;
+  color: var(--deep);
   transform: translateY(-2px);
 }
 
 /* ── FOOTER ── */
 footer {
   padding: 3rem 6rem;
-  background: rgba(45, 36, 16, 0.95);
-  color: var(--cream);
+  background: rgba(186, 225, 255, 0.8); /* Footer celeste glass */
+  color: var(--deep);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 0.5px solid rgba(196, 160, 90, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
 }
 
@@ -839,7 +840,7 @@ footer {
   font-size: 1.2rem;
   font-weight: 300;
   font-style: italic;
-  color: var(--cream);
+  color: var(--deep);
   letter-spacing: 0.1em;
 }
 
@@ -852,7 +853,7 @@ footer {
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--cream);
+  color: var(--deep);
   text-decoration: none;
   transition: color 0.2s;
   font-weight: 500;
