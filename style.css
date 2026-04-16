@@ -680,8 +680,8 @@ section {
   font-size: 4rem;
   font-weight: 300;
   font-style: italic;
-  color: var(--deep); /* Cambiado a deep con opacidad para que se vea */
-  opacity: 0.15;
+  color: var(--dusty-rose); /* Rosa que combina con el título */
+  opacity: 0.3;
   line-height: 1;
   margin-bottom: 1rem;
 }
