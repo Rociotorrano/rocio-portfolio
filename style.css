@@ -4,10 +4,14 @@
   --blush: #FDE2E4;
   --dusty-rose: #F28C95;
   --terra: #FFB382;
-  --deep: #3A506B; /* Azul profundo para legibilidad en lugar de marrón */
-  --sage: #5BC0BE; /* Celeste acento */
-  --gold: rgba(255, 255, 255, 0.85); /* Blanco opaco para etiquetas */
-  --gold-light: rgba(186, 225, 255, 0.3); /* Bordes celestes suaves */
+  --deep: #3A506B;
+  /* Azul profundo para legibilidad en lugar de marrón */
+  --sage: #5BC0BE;
+  /* Celeste acento */
+  --gold: rgba(255, 255, 255, 0.85);
+  /* Blanco opaco para etiquetas */
+  --gold-light: rgba(186, 225, 255, 0.3);
+  /* Bordes celestes suaves */
   --charcoal: #5BC0BE;
   --mesh-1: #FFB382;
   --mesh-2: #F28C95;
@@ -81,20 +85,23 @@ body {
   position: fixed;
   width: 25px;
   height: 25px;
-  background: #FFFFFF; /* Blanco puro */
+  background: #FFFFFF;
+  /* Blanco puro */
   clip-path: polygon(50% 0%, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0% 50%, 39% 39%);
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
-  filter: drop-shadow(0 0 10px #FFFFFF) drop-shadow(0 0 20px #FFFFFF); /* Sombra blanca intensa */
+  filter: drop-shadow(0 0 10px #FFFFFF) drop-shadow(0 0 20px #FFFFFF);
+  /* Sombra blanca intensa */
 }
 
 #cursor-ring {
   position: fixed;
   width: 65px;
   height: 65px;
-  background: rgba(255, 255, 255, 0.4); /* Halo blanco más visible */
+  background: rgba(255, 255, 255, 0.4);
+  /* Halo blanco más visible */
   border-radius: 50%;
   pointer-events: none;
   z-index: 9998;
@@ -638,8 +645,10 @@ section {
 
 /* ── ABOUT / PROCESS ── */
 .process {
-  background: rgba(186, 225, 255, 0.5); /* Celeste soñado con transparencia */
-  color: var(--deep); /* Cambiamos a deep para que se lea mejor sobre el azul */
+  background: rgba(186, 225, 255, 0.5);
+  /* Celeste soñado con transparencia */
+  color: var(--deep);
+  /* Cambiamos a deep para que se lea mejor sobre el azul */
   backdrop-filter: blur(15px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -649,11 +658,13 @@ section {
 }
 
 .process .section-title em {
-  color: var(--dusty-rose); /* Coral más visible */
+  color: var(--dusty-rose);
+  /* Coral más visible */
 }
 
 .process .section-num {
-  color: var(--deep); /* Azul profundo para que se note */
+  color: var(--deep);
+  /* Azul profundo para que se note */
 }
 
 .process .section-line {
@@ -680,7 +691,8 @@ section {
   font-size: 4rem;
   font-weight: 300;
   font-style: italic;
-  color: var(--dusty-rose); /* Rosa que combina con el título */
+  color: var(--dusty-rose);
+  /* Rosa que combina con el título */
   opacity: 0.3;
   line-height: 1;
   margin-bottom: 1rem;
@@ -803,7 +815,8 @@ section {
 
 .form-submit {
   padding: 1rem 2.5rem;
-  background: rgba(186, 225, 255, 0.9); /* Celeste soñado en el botón */
+  background: rgba(186, 225, 255, 0.9);
+  /* Celeste soñado en el botón */
   color: var(--deep);
   border: none;
   cursor: none;
@@ -826,7 +839,8 @@ section {
 /* ── FOOTER ── */
 footer {
   padding: 3rem 6rem;
-  background: rgba(186, 225, 255, 0.8); /* Footer celeste glass */
+  background: rgba(186, 225, 255, 0.8);
+  /* Footer celeste glass */
   color: var(--deep);
   display: flex;
   justify-content: space-between;
@@ -970,7 +984,8 @@ footer {
 .marquee-strip {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  padding: 1.2rem 0; /* Más moderado */
+  padding: 1.2rem 0;
+  /* Más moderado */
   overflow: hidden;
 }
 
@@ -985,7 +1000,8 @@ footer {
 
 .marquee-inner span {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.4rem; /* Más balanceado */
+  font-size: 1.4rem;
+  /* Más balanceado */
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--deep);
