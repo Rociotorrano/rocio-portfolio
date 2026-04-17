@@ -133,6 +133,13 @@ nav {
   text-decoration: none;
 }
 
+.logo-img {
+  height: 85px;
+  width: auto;
+  display: block;
+  transition: height 0.3s ease;
+}
+
 .nav-links {
   display: flex;
   gap: 2.5rem;
@@ -922,11 +929,15 @@ footer {
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav {
-    padding: 1.2rem 2rem;
+    padding: 0.6rem 2rem;
+  }
+
+  .logo-img {
+    height: 50px;
   }
 
   .nav-links {
-    gap: 1.5rem;
+    gap: 1.1rem;
   }
 
   .hero {
@@ -977,6 +988,45 @@ footer {
   .footer-links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0.35rem 0.8rem;
+  }
+
+  .logo-img {
+    height: 32px;
+  }
+
+  .nav-links {
+    gap: 0.6rem;
+  }
+
+  .nav-links a {
+    font-size: 0.6rem;
+    letter-spacing: 0.05em;
+  }
+
+  .hero-left {
+    padding: 5rem 1.5rem 3rem;
+  }
+  
+  .hero-title {
+    font-size: 2.8rem;
+  }
+  
+  section {
+    padding: 4rem 1.5rem;
+  }
+
+  .marquee-strip {
+    padding: 0.8rem 0;
+  }
+
+  .marquee-inner span {
+    font-size: 1.1rem;
   }
 }
 
